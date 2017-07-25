@@ -1,4 +1,4 @@
 # FREECODECAMP
 
 ## Description
-Exercise: Show the Local Weather
+Exercise: Build a Wikipedia Viewer
