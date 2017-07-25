@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FREECODECAMP exercise: Build a Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon-precomposed" href="media/favicon.png">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/png">
+</head>
+
+<body>
+<!--^ exclude in codepen ^-->
+
+<div id="wrapper">
+  
+  
+  <header id="header">
+    <a href="https://www.freecodecamp.com/demikeison" title="FreeCodeCamp Mickel Metekohy" target="_blank">
+      <img src="media/freecodecamp_logo.svg" alt="free code camp logo" height="40">
+    </a>
+  </header>
+  
+  <main>
+    <div id="search-wiki-form">
+      <label><input id="search-wiki-field" name="s" type="text"></label>
+    </div>
+    
+    <div id="search-wiki-buttons">
+      <button id="search-wiki-submit" class="search-btn" type="button"><span>Search</span></button>
+      <a id="wiki-random" class="search-btn" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><span>Wiki Me Now!</span></a>
+    </div>
+    
+    <div id="results"></div>
+    
+    <div class="clearfix"></div>
+  </main>
+
+  <footer>
+    <div class="info-btn-container single-btn">
+        <label class="info btn"><input type="checkbox" name="info" value="info">
+          <div id="info">
+            <div class="inner-info">
+              <div class="social">
+                <a href="https://twitter.com/mickelmetekohy" class="tweet btn"><span class="sr-only">Twitter</span></a>
+                <a href="https://github.com/MickelMetekohy" class="github btn"><span class="sr-only">Github</span></a>
+                <a href="https://www.linkedin.com/in/mickel-metekohy-31105865" class="linkedin btn"><span class="sr-only">LinkedIn Quote</span></a>
+                <span class="exit btn"><span class="sr-only">Exit Info</span></span>
+              </div>
+              <div class="copy">
+                <p>#FreeCodeCamp Exersize:<br>Build a Wikipedia Viewer.</p>
+              </div>
+              <div class="fcc">
+                <a href="https://www.freecodecamp.com/demikeison" title="FreeCodeCamp Mickel Metekohy" target="_blank">
+                  <img src="media/freecodecamp_logo.svg" alt="free code camp logo" height="40">
+                </a>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+  </footer>
+  
+</div>
+<!-- end #wrapper -->
+
+<!--v exclude in codepen v-->
+    <script src="js/index.js"></script>
+</body>
+</html>

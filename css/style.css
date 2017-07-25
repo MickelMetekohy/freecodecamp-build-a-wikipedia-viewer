@@ -1,0 +1,307 @@
+/* base */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* header (logo) */
+#header {
+    position: absolute;
+    z-index: 10;
+    left: -200px;
+    top: 20px;
+    background-color: hotpink;
+}
+
+#header img {
+    display: block;
+    -webkit-clip-path: inset(0% 0% 0% 81%);
+    clip-path: inset(0% 0% 0% 81%);
+}
+
+
+/* main */
+#wrapper > main {
+  padding: 0px 0px 30px;
+}
+
+#search-wiki-form {
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background-color: mediumaquamarine;
+}
+
+#search-wiki-field {
+  font-size: 44px;
+  margin-top: 7px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px 0px;
+  background-color: mediumaquamarine;
+}
+#search-wiki-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.search-btn {
+  text-decoration: none;
+  background-color: hotpink;
+  color: #fff;
+  text-align: center;
+  border: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 500px;
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.search-btn span {
+  padding: 52px 0;
+  display: inline-block;
+}
+
+#search-wiki-submit {
+  width: 220px;
+  height: 220px;
+}
+
+#results {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.result {
+  border: 1px solid mediumaquamarine;
+  border-radius: 20px;
+  margin: 0 20px 20px;
+  width: 240px;
+  height: 240px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.result .overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 36px solid mediumaquamarine;
+}
+
+.result header {
+  border-bottom: 1px solid mediumaquamarine;
+}
+
+.result header h1 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.result main {
+  height: 125px;
+  overflow: hidden;
+}
+
+.result footer {
+  width: 212px;
+  position: absolute;
+  bottom: 0px;
+  left: 14px;
+  padding: 4px 0;
+  text-align: center;
+  background: mediumaquamarine;
+}
+
+.result footer a {
+  padding: 5px 0px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+/* footer toggle */
+.single-btn {
+    width: 42px;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    background: #fff;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    margin: 2px 1px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: mediumaquamarine;
+}
+
+.info {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+}
+
+input[type="checkbox" i] { display: none; }
+
+input[type="checkbox" i]:checked + #info { left: -30px; }
+
+button:before,
+a:before,
+.info:before,
+.exit:before {
+    font-family: FontAwesome;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
+a:before { top: 12px; }
+
+.info:before {
+    content: "\f129";
+    top: 11px;
+    left: 16px;
+}
+
+/* footer fcc tent */
+#info {
+    position: absolute;
+    width: 100%;
+    bottom: -22px;
+    left: -515px;
+    z-index: 0;
+    transition: all .45s;
+    -webkit-transition: all .45s;
+}
+
+.inner-info {
+    position: fixed; 
+    bottom: 0; 
+    margin: 0px auto;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+}
+
+.inner-info:before,
+.inner-info:after {
+    content: '';
+    left: 0;
+    bottom: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 260px solid hotpink;
+}
+
+.inner-info:after {
+    left: 60px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 160px solid mediumaquamarine;
+}
+
+.social {
+    position: relative;
+    top: -93px;
+}
+
+.copy {
+    margin: -95px 0 0 0;
+    color: #fff;
+}
+
+.copy p { font-size: 14px; }
+
+.copy a { color: #fff; }
+
+.tweet:before { content: "\f099"; }
+
+.github:before { content: "\f09b"; }
+
+.linkedin:before { content: "\f0e1"; }
+
+.exit {
+  width: 30px;
+  height: 30px;
+}
+
+.exit:before { top: 7px; }
+
+.exit:before { content: "\f00d"; }
+
+.fcc {
+  overflow: hidden;
+  width: 50px;
+}
+
+.fcc img {
+  position: absolute;
+  left: -102px;
+  bottom: 1px;
+  display: block;
+  -webkit-clip-path: inset(0% 0% 0% 81%);
+  clip-path: inset(0% 0% 0% 81%);
+}
